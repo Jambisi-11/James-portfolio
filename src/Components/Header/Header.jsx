@@ -68,7 +68,7 @@ const Header = () => {
                             className="w-6.5 h-11  bg-gray-00 flex items-center justify-center border-l border-gray-600 "
                         >
                             <Icon
-                           className={`w-5 h-3.5 ${id === "instagram" ? "stroke-white hover:stroke-green-500" : "fill-white hover:fill-green-500"}`}
+                           className={`w-5 h-3.5 ${id === "instagram" ? "stroke-white hover:stroke-green-500" : "fill-white hover:stroke-green-500 hover:fill-green-500"}`}
                            />
                         </a>
                         ))}
