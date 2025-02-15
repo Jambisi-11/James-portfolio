@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import logo from '../../assets/yourWord.png';
+import logo from '../../assets/port.png';
 import { Search, X} from 'lucide-react';
 import Blog from '../Blog/Blog';
 import SingleBlong from '../blog/SingleBlog/SingleBlog';
@@ -42,7 +42,7 @@ const Menu = () => {
   return (
     <nav className='flex justify-center items-center h-20 text-white border-b border-gray-800 '>
     <div className='w-[75vw] items-center flex justify- m-auto'>
-      <img src={logo} alt='logo' className='w-20 h-8 rounded-[1.5em]' />
+      <img src={logo} alt='logo' className='w-10 h-8 rounded-[1.5em]' />
       <ul className='flex gap-4 ml-auto'>
       {filteredItems.length > 0 ? (
           filteredItems.map((item) => (
