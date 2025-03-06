@@ -68,9 +68,9 @@ const Home = () => {
   }, []);
 
   return (
-    <div className='w-[80vw] h-200 mt-0 m-auto border-l-1 border-r-1 border-gray-800'>
-      <h1 className='text-4xl text-center mt-10'>Welcome to the Home Page</h1>
-      <div className='text-7xl font-bold relative'>
+    <div className='mt-0 m-auto border-l-1 border-r-1 border-gray-800'>
+      <h1 className='text-4xl text-center mt-10'>Welcome to my Portfolio</h1>
+      <div className='text-7xl mt-8 font-bold relative'>
         {/* First Section */}
         <div className='flex p-6 absolute top-0 left-0 w-full'>
           <h2 ref={nothingRef} style={{ opacity: 0, transform: 'translateY(-50px)' }}>
@@ -100,7 +100,10 @@ const Home = () => {
             style={{ opacity: 0, transform: 'translateY(-50px)' }}
           />
         </div>
-      </div>
+        </div>
+        <div className='text-2xl font-bold w-[22em] bg-green-600 shadow-2lg mt-[330px] mb-[2em] mx-7 px-4 border-l-3  border-green-100 rounded-tr-4xl rounded-br-4xl'>
+            <p>It is undiluted Truth that Jesus died for you <br />Give your life to Him</p>
+        </div>
     </div>
   );
 };
