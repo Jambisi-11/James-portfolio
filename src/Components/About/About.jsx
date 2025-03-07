@@ -59,17 +59,22 @@ const About = () => {
 
     return (
         <div className="p-8">
-            <div className="flex flex-col md:flex-row mt-4 gap-6">
+            <div className="flex flex-col md:flex-row mt-4 gap-4">
                 {/* Image Section */}
-                <div className="w-full md:w-1/2 flex justify-center relative">
+                
+                <div className="w-full md:w-1/2 justify-center relative">
+                <div className='relative flex justify-center items-center w-full '>
                     <img
                         src={aboutPic}
                         alt="about"
-                        className="w-[20em] h-[30em] object-cover"
+                        className="w-[20em] h-[35em] justify-center items-center object-cover"
                     />
-                    <div className="absolute bottom-0 left-0 right-0 h-[50%] bg-gradient-to-t from-black/100 to-transparent pointer-events-none"></div>
+                    <div className="absolute bottom-0 left-0 right-0 h-[110%] bg-gradient-to-t from-black/100 to-transparent pointer-events-none"></div>
                 </div>
-
+                <div>
+                        
+                </div>
+                </div>
                 {/* Text Section */}
                 <div className="w-full md:w-1/2 text-center mt-4">
                     <p>
