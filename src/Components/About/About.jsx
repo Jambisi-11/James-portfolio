@@ -1,167 +1,37 @@
 import React from 'react';
 import aboutPic from '../../assets/about.png';
 
-// Reusable Component for Education Item
-const EducationItem = ({ title, institution, date, description, town }) => {
-    return (
-        <div className="border-l-4 border-r-4 border-green-500 p-3 rounded-br-3xl rounded-tl-3xl mb-8 p bg-gray-800">
-            <h3 className="text-xl font-bold">{title}</h3>
-            <p className="text-green-300 font-medium">{institution}</p>
-            <p className="text-sm text-green-300  mb-2">{date}</p>
-            <p className="text-green-300 ">{description}</p>
-            <p className="text-green-300 ">{town}</p>
-            {/* {children && <div className="mt-2">{children}</div>} */}
-        </div>
-    );
-};
-
 const About = () => {
-    const eduCont = [
-        {
-            title: "National Diploma in Computer Science.",
-            institution: "Igbajo Polytechnic, Igbajo.",
-            town: "Igbajo",
-            date: "2012 - 2014",
-            description: "Graduated with Distinction, Best Student .",
-        },
-        {
-            title: "Senior High School,",
-            institution: "Ogiyan Community High School,",
-            town: "Ejigbo,",
-            date: "2005 - 2008",
-            description: "Completed high school with a focus on mathematics and science. Also, Senior Prefect",
-            // children: <p className="text-sm text-gray-500">Additional details can go here.</p>,
-        }
-
-       
-    ];
-
-    const eduCont1 = [
-      {
-        title: "Junior High School,",
-        institution: "Ogiyan Community High School,",
-        town: "Asewele Korede",
-        date: "2001 - 2004",
-        description: "Best student in mathematics",
-        // children: <p className="text-sm text-gray-500">Additional details can go here.</p>,
-    },
-      {
-          title: "Primary School,",
-          institution: "Baptist Primary School,",
-          town: "Isanlu Isin",
-          date: "2005 - 2008",
-          description: "Completed high school with a focus on mathematics and science. Also, Senior Prefect",
-          // children: <p className="text-sm text-gray-500">Additional details can go here.</p>,
-      },
-
-      
-  ];
-
     return (
         <div className="p-8">
-            <div className="flex flex-col md:flex-row mt-4 gap-4">
-                {/* Image Section */}
-                
-                <div className="w-full md:w-1/2 justify-center relative">
-                <div className='relative flex justify-center items-center w-full '>
-                    <img
-                        src={aboutPic}
-                        alt="about"
-                        className="w-[20em] h-[35em] justify-center items-center object-cover"
-                    />
-                    <div className="absolute bottom-0 left-0 right-0 h-[110%] bg-gradient-to-t from-black/100 to-transparent pointer-events-none"></div>
-                </div>
-                <div>
-                        
-                </div>
-                </div>
-                {/* Text Section */}
-                <div className="w-full md:w-1/2 text-center mt-4">
-                    <p>
-                        <strong>Failure is <span>the condiment</span> That Gives <span>Success.</span></strong>
-                    </p>
-                    <h3 className="font-bold text-green-500 text-[2em] underline decoration-amber-50 underline-offset-10">
-                        The Journey So Far
-                    </h3>
-                    <div>
-                        <h3 className="mt-4 text-[1.5em] font-bold">Education📖</h3>
-                        <div className="flex flex-col md:flex-row mt-4 gap-6">
-                            {/* Column 1 */}
-                            <div className="w-full md:w-1/2 text-center">
-                                {eduCont.map((item, index) => (
-                                    <EducationItem
-                                        key={index}
-                                        title={item.title}
-                                        institution={item.institution}
-                                        town={item.town}
-                                        date={item.date}
-                                        description={item.description}
-                                        children={item.children}
-                                    />
-                                ))}
-                            </div>
-
-                            {/* Vertical Line */}
-                            <div className="hidden md:block w-px bg-gray-300"></div>
-
-                            {/* Column 2 */}
-                       
-                            <div className="w-full md:w-1/2 text-center">
-                                {eduCont1.map((item, index) => (
-                                    <EducationItem
-                                        key={index}
-                                        title={item.title}
-                                        institution={item.institution}
-                                        town={item.town}
-                                        date={item.date}
-                                        description={item.description}
-                                        children={item.children}
-                                    />
-                                ))}
-                            </div>
-                            
-                        </div>
-
-                        <div>
-                        <h3 className="mt-4 text-[1.5em] font-bold">Work Experience📖</h3>
-                        <div className="flex flex-col md:flex-row mt-4 gap-6">
-                            {/* Column 1 */}
-                            <div className="w-full md:w-1/2 text-center">
-                                {eduCont.map((item, index) => (
-                                    <EducationItem
-                                        key={index}
-                                        title={item.title}
-                                        institution={item.institution}
-                                        town={item.town}
-                                        date={item.date}
-                                        description={item.description}
-                                        children={item.children}
-                                    />
-                                ))}
-                            </div>
-
-                            {/* Vertical Line */}
-                            <div className="hidden md:block w-px bg-gray-300"></div>
-
-                            {/* Column 2 */}
-                       
-                            <div className="w-full md:w-1/2 text-center">
-                                {eduCont1.map((item, index) => (
-                                    <EducationItem
-                                        key={index}
-                                        title={item.title}
-                                        institution={item.institution}
-                                        town={item.town}
-                                        date={item.date}
-                                        description={item.description}
-                                        children={item.children}
-                                    />
-                                ))}
-                            </div>
-                            
-                        </div>
-                        </div>
+            <div className="flex flex-col md:flex-row mt-4 gap-8">            
+                {/* Image Section (50%) */}
+                <div className="w-full md:w-1/2 flex justify-center items-center mt-12">
+                    <div className='relative flex justify-center items-center w-full'>
+                        <img
+                            src={aboutPic}
+                            alt="about"
+                            className="w-[20em] h-[35em] object-cover"
+                        />
+                        <div className="absolute bottom-0 left-0 right-0 h-[100%] bg-gradient-to-t from-black/100 to-transparent pointer-events-none"></div>
                     </div>
+                </div>
+
+                {/* Text Section (50%) */}
+                <div className="w-full md:w-1/2 flex justify-center items-center">
+                    <p className="text- leading-relaxed p-4 text-black bg-green-400 rounded-br-[3em] rounded-tl-[3em]" > <em>
+                        <strong>"Hi, I’m Ajide Olabisi James, </strong>  an intermediate Front-End Developer with expertise in HTML, CSS, JavaScript (beginner), React.js, 
+                        Tailwind, and collaborative tools like GitHub. I also have a foundational understanding of UX/UI design, which I’ve cultivated 
+                        through hands-on experience and self-directed learning. While I’m not formally trained in design, I’m passionate about creating 
+                        intuitive and visually appealing interfaces that enhance user experiences.
+                        <br /><br />
+                        Currently, I’m a full-time staff member at Living Seed Team, Media Department, based in Gboko, where I also collaborate with the Software Department. 
+                        My journey into the world of coding is more than just a career shift—it’s the fulfillment of a long-standing prophecy. This path 
+                        will allow me to bring value and relief to our software team, and coding is also a fulfillment of that prophecy. While I’m not yet where I want to be, I’m committed to continuously learning and acquiring new skills that will add more value to the software field. I’m someone who doesn’t easily give up, and I thrive on tackling new challenges and collaborating with like-minded creatives to bring ideas to life.
+                        <br /><br />
+                        Let’s connect and build something amazing together!"
+                        </em>
+                        </p>    
                 </div>
             </div>
         </div>

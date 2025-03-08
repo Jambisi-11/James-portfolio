@@ -252,10 +252,10 @@ const Menu = () => {
                 onClick={() => {
                   if (item.id === "pages") {
                     setIsPagesOpen(!isPagesOpen);
-                    setSelectedItem(""); // Prevent other items from being underlined
+                    setSelectedItem(""); 
                   } else {
                     setSelectedItem(item.id);
-                    setIsPagesOpen(false); // Close PAGES dropdown when selecting another item
+                    setIsPagesOpen(false); 
                   }
                 }}
               >

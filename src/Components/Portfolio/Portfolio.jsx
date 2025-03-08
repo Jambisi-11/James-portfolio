@@ -16,6 +16,8 @@ const EducationItem = ({ title, institution, date, description, town }) => {
 };
 
 
+
+
 const Portfolio = () => {
   
     const eduCont = [
@@ -58,6 +60,50 @@ const Portfolio = () => {
     
           
       ];
+
+
+      const workCont = [
+        {
+          title: "Staff Of Peace House",
+          institution: "Media Department,",
+          town: "Gboko",
+          date: "2024 - till date",
+          description: "Labouring in Audio Section",
+          // children: <p className="text-sm text-gray-500">Additional details can go here.</p>,
+      },
+        {
+            title: "Full-Time Disciple",
+            institution: "Revival Labours in Osun Zone",
+            town: "Osogbo",
+            date: "2019 - 2024",
+            description: "Laboured as Tech. Man, Media Head, Class Leader, Field Leader.",
+            // children: <p className="text-sm text-gray-500">Additional details can go here.</p>,
+        },
+  
+        
+    ];
+
+    const workCont1 = [
+        {
+          title: "Public Servant",
+          institution: "Transporter",
+          town: "Osogbo",
+          date: "2017-2018",
+          description: "Within Osogbo and It environ",
+          // children: <p className="text-sm text-gray-500">Additional details can go here.</p>,
+      },
+        {
+            title: "Computer Operator",
+            institution: "Ola-Oluwa Aina, Wire Industry",
+            town: "Osogbo",
+            date: "2015 - 2017",
+            description: "I specialize in managing and optimizing daily workflows",
+            // children: <p className="text-sm text-gray-500">Additional details can go here.</p>,
+        },
+  
+        
+    ];
+  
     
         return (
             <div className="p-8">
@@ -129,7 +175,7 @@ const Portfolio = () => {
                             <div className="flex flex-col md:flex-row mt-4 gap-6">
                                 {/* Column 1 */}
                                 <div className="w-full md:w-1/2 text-center">
-                                    {eduCont.map((item, index) => (
+                                    {workCont.map((item, index) => (
                                         <EducationItem
                                             key={index}
                                             title={item.title}
@@ -148,7 +194,7 @@ const Portfolio = () => {
                                 {/* Column 2 */}
                            
                                 <div className="w-full md:w-1/2 text-center">
-                                    {eduCont1.map((item, index) => (
+                                    {workCont1.map((item, index) => (
                                         <EducationItem
                                             key={index}
                                             title={item.title}

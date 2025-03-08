@@ -12,7 +12,7 @@ import Footer from './Components/Footer/Footer';
 import Gallery from './Components/Gallary/Gallery';
 import Pages from './Components/Pages/Pages'
 import Career from './Components/Career/Career';
-
+import Blog from './Components/Blog/Blog';
 const App = () => {
   return (
     <div
@@ -35,7 +35,7 @@ const App = () => {
           <Route path="/pages" element={<Pages />} />
           <Route path="/carrer" element={<Career />} />
           <Route path="/gallery" element={<Gallery />} />
-          
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </div>
 
