@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className='h-[10em] bg-black text-white'>
       <div className='h-[10em] flex flex-col justify-center items-center'>
-        <ul className='flex justify-center items-center gap-4 font-bold p-4 border-y-1 w-[60%]'>
+        <ul className= {`${window.innerWidth < 768 ? 'text-[10px] flex justify-center items-center gap-4 font-bold p-2 border-y-1 w-[70%]' : 'flex justify-center items-center gap-4 font-bold p-4 border-y-1 w-[60%]' }`}>
           <li><Link to="/about" className="hover:text-green-400">ABOUT ME</Link></li>
           <li><Link to="/career" className="hover:text-green-400">CAREER</Link></li>
           <li><Link to="/blog" className="hover:text-green-400">BLOG</Link></li>

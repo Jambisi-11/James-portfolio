@@ -56,8 +56,8 @@ const ContactUs = () => {
           <h2 className="text-2xl font-bold  mb-4">Contact Me</h2>
           <div className='w-full  gap-6'>
             <div className="w-full">
-                <div className="mb-6 flex gap-8 justify-center items-center  text-[20px]">
-                    <div className='flex flex-col w-[350px] h-[200px] p-4 justify-center items-center text-center rounded-2xl border border-gray-700 hover:scale-105 hover:font-bold hover:shadow-amber-50 transition-transform duration-300'>
+                <div className={`${window.innerWidth <= 768 ? 'flex flex-col gap-8' : 'mb-6 flex gap-8 justify-center items-center  text-[20px]'}`}>
+                    <div className='flex flex-col w-[350px] h-[200px] p-4 justify-center items-center text-center sm:flex-row rounded-2xl border border-gray-700 hover:scale-105 hover:font-bold hover:shadow-amber-50 transition-transform duration-300'>
                         <div><img src={Location} className='w-10' alt="" /></div>
                         <div>
                             <p> <span className='text-green-500'>Home Address: <br /> </span>Back Winika Hotel, GRA, Gboko, Benue State, Nigeria.</p> <br />
@@ -81,7 +81,8 @@ const ContactUs = () => {
                 </div>
             </div>
             <h2 className="text-2xl font-bold  mb-4">You can conncet via-</h2>
-                 <div className='flex w-[80%] gap-16 justify-center item-center mx-auto min-h-screen'>  
+                 <div className={`${window.innerWidth <= 768 ? 'flex flex-col gap-8' : 'flex w-[80%] gap-16 justify-center item-center mx-auto min-h-screen'}`}>  
+                 
                     <div className="flex  space-x-4 mb-2 bg-gray-900 h-14 p-2 w-73 rounded-2xl">
                         {socialIcons.map(({ id, Icon, link }) => (
                             <a key={id} href={link} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-green-500">

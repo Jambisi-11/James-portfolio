@@ -11,7 +11,7 @@ const About = () => {
                         <img
                             src={aboutPic}
                             alt="about"
-                            className="w-[20em] h-[35em] object-cover"
+                            className={`${window.innerWidth < 768 ? 'text-center text-[55px] mt-2' : 'w-[20em] h-[35em] object-cover'}`}
                         />
                         <div className="absolute bottom-0 left-0 right-0 h-[100%] bg-gradient-to-t from-black/100 to-transparent pointer-events-none"></div>
                     </div>

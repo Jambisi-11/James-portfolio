@@ -192,11 +192,11 @@ const Home = () => {
 
   return (
     <div className='mt-0 m-auto  border-l border-r border-gray-800'>
-      <h1 className='text-4xl text-center mt-10'>Welcome to my Portfolio</h1>
+      <h1 className={`${window.innerWidth <= 768 ? 'text-center text-[55px]' : 'text-4xl text-center justify-center items-center mt-10 '}`}>Welcome to my Portfolio</h1>
       <div className='text-7xl mt-8 font-bold relative h-[350px]'>
         {/* First Section */}
-        <div className='flex p-6 absolute top-0 left-0 w-full'>
-          <h2 ref={nothingRef} style={{ opacity: 0, transform: 'translateY(-50px)' }}>
+        <div className='flex p-6 absolute top-0 left-0 w-full '>
+          <h2 ref={nothingRef} style={{ opacity: 0, transform: 'translateY(-50px)' }} className={`${window.innerWidth <= 768 ? 'text-center text-[55px]' : ''}`}>
             The Best I can be <span className='text-green-500'>WITHOUT JESUS</span> is{' '}
             <span className='text-green-500'>NOTHING!</span>
           </h2>
@@ -212,7 +212,7 @@ const Home = () => {
 
         {/* Second Section */}
         <div className='flex p-6 absolute top-0 left-0 w-full'>
-          <h2 ref={excellentRef} style={{ opacity: 0, transform: 'translateY(-50px)' }}>
+          <h2 ref={excellentRef} style={{ opacity: 0, transform: 'translateY(-50px)' }} className={`${window.innerWidth <= 768 ? 'text-center text-[55px]' : ''}`}>
             The least I can be <span className='text-green-500 '><br />WITH JESUS</span> is{' '}
             <span className='text-green-500'>EXCELLENT!</span>
           </h2>
@@ -229,7 +229,6 @@ const Home = () => {
       <div className='text-xl md:text-2xl font-bold w-[20em] md:w-[22em] bg-green-600 shadow-2xl mb-[2em] mx-7 px-2 md:px-4 border-l-8 border-green-100 rounded-tr-[2rem] rounded-br-[2rem] relative z-10 md:mt-[40px]'>
         <p>
           It is undiluted Truth that Jesus died for you
-          <br />
           Give your life to Him
           <Link
             to='/blog'
