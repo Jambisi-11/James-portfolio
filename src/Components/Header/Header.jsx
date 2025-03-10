@@ -15,6 +15,8 @@ import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 const Header = () => {
   return (
+    <div className="hidden lg:block w-full bg-gray-700 text-white p-4">
+
     <div className="w-[99vw] h-11 bg-gray-700 text-white p-4">
       <div className="w-[75vw] h-1.5 bg-gray-700 flex justify-between items-center m-auto mt-0 pt-0">
         <div className='flex items-center gap-2 '>
@@ -99,6 +101,7 @@ const Header = () => {
                 </div>
             
         </div>
+    </div>
     </div>
             
         )

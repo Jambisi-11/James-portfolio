@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from "react";
 import aboutPic from '../../assets/about.png';
 
 // Reusable Component for Education Item
@@ -20,6 +20,15 @@ const EducationItem = ({ title, institution, date, description, town }) => {
 
 const Portfolio = () => {
   
+    const [skills] = useState([
+        { name: "HTML", percentage: 90 },
+        { name: "CSS", percentage: 85 },
+        { name: "React", percentage: 70 },
+        { name: "GitHub", percentage: 90 },
+        { name: "Java Script", percentage: 50 },
+        { name: "Tailwind", percentage: 65 },
+      ]);
+
     const eduCont = [
             {
                 title: "National Diploma in Computer Science.",
@@ -34,8 +43,7 @@ const Portfolio = () => {
                 town: "Ejigbo,",
                 date: "2005 - 2008",
                 description: "Completed high school with a focus on mathematics and science. Also, Senior Prefect",
-                // children: <p className="text-sm text-gray-500">Additional details can go here.</p>,
-            }
+               }
     
            
         ];
@@ -119,9 +127,61 @@ const Portfolio = () => {
                         />
                         <div className="absolute bottom-0 left-0 right-0 h-[110%] bg-gradient-to-t from-black/100 to-transparent pointer-events-none"></div>
                     </div>
+                   
+
+
+
+                <div className="justify-center items-center">
                     <div>
-                            
+                        <h3 className="text-[2em] pl-40 font-bold  text-left capitalize">
+                        My Skills
+                        </h3>
                     </div>
+
+                    <div className="flex flex-wrap justify-center gap-8 mt-8">
+                        {skills.map((skill, index) => {
+                        const progress = 283 * (1 - skill.percentage / 100); // Calculate offset
+
+                        return (
+                            <div
+                            key={index}
+                            className="chart relative inline-block w-[149px] h-[149px] text-center bg-gray-800  rounded-full"
+                            >
+                            <div className="relative w-[150px] h-[150px] flex justify-center items-center">
+                                <div className="absolute w-[120px] h-[120px] bg-black rounded-full z-10"></div>
+
+                                {/* SVG Circle */}
+                                <svg
+                                viewBox="0 0 100 100"
+                                className="absolute top-0 left-0 w-full h-full"
+                                >
+                                <path
+                                    d="M 50, 50 m -45, 0 a 45,45 0 1,0 90,0 a 45,45 0 1,0 -90,0"
+                                    strokeWidth="8"
+                                    strokeMiterlimit="10"
+                                    strokeDasharray="283"
+                                    strokeDashoffset={progress} // Updates dynamically on code edit
+                                    strokeLinecap="round" // 
+                                    className="stroke-current text-green-500  transition-all duration-500"
+                                    fill="none"
+                                    transform="rotate(-90 50 50)"
+                                />
+                                </svg>
+
+                                {/* Progress Text */}
+                                <span className="absolute text-2xl font-bold z-20">
+                                {skill.percentage}%
+                                </span>
+                            </div>
+
+                            {/* Skill Name */}
+                            <h5 className="text-center font-bold mt-2">{skill.name}</h5>
+                            </div>
+                        );
+                        })}
+                    </div>
+                    </div>      
+                    
                     </div>
                     {/* Text Section */}
                     <div className="w-full md:w-1/2 text-center mt-4">

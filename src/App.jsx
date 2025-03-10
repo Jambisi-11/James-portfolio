@@ -13,6 +13,8 @@ import Gallery from './Components/Gallary/Gallery';
 import Pages from './Components/Pages/Pages'
 import Career from './Components/Career/Career';
 import Blog from './Components/Blog/Blog';
+import SingleBlog from './Components/Blog/SingleBlog/SingleBlog';
+import ContactUs from './Components/ContactUs/ContactUs';
 const App = () => {
   return (
     <div
@@ -36,6 +38,8 @@ const App = () => {
           <Route path="/carrer" element={<Career />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<SingleBlog />} />
+          <Route path="/contactus" element={<ContactUs />} />
         </Routes>
       </div>
 

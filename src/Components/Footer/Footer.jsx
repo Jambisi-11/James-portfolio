@@ -11,7 +11,7 @@ const Footer = () => {
           <li><Link to="/career" className="hover:text-green-400">CAREER</Link></li>
           <li><Link to="/blog" className="hover:text-green-400">BLOG</Link></li>
           <li><Link to="/gallery" className="hover:text-green-400">GALLERY</Link></li>
-          <li><Link to="/contact" className="hover:text-green-400">CONTACT ME</Link></li>
+          <li><Link to="/contactus" className="hover:text-green-400">CONTACT ME</Link></li>
         </ul>
         <div className='flex justify-center items-center gap-4 mt-8'>Copy right, @Ajide Olabis James-2025</div>
       </div>
