@@ -25,10 +25,9 @@ const About = () => {
                         through hands-on experience and self-directed learning. While I’m not formally trained in design, I’m passionate about creating 
                         intuitive and visually appealing interfaces that enhance user experiences.
                         <br /><br />
-                        Also, I’m a full-time staff member at Living Seed Team, Media Department, based in Gboko, where I also labour with the Software Department. 
-                        My journey into the world of coding is not a career shift—it’s the fulfillment of a long-standing prophecy. This path 
-                        will allow me to bring value and relief to our software team, and coding is also a fulfillment of that prophecy. While I’m not yet where I want to be, I’m committed to continuously learning and acquiring new skills that will add more value to the software field. I’m someone who doesn’t easily give up, and I thrive on tackling new challenges and collaborating with like-minded creatives to bring ideas to life.
-                        <br /><br />
+                        I'm a full-time staff member at Living Seed Team, Media Department, based in Gboko, where I also work with the Software Department. 
+                        For me, delving into the world of coding is not a career shift—it’s the fulfillment of a long-standing prophecy aimed at bringing 
+                        value and relief to our software team. While I’m not yet where I want to be, I am deeply committed to continuously learning and acquiring new skills to enhance the software field. I thrive on tackling new challenges and collaborating with like-minded creatives to bring ideas to life, and I don’t easily give up.<br /><br />
                         Let’s connect and build something amazing together!"
                         </em>
                         </p>    
