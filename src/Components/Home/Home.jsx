@@ -195,7 +195,7 @@ const Home = () => {
       <h1 className={`${window.innerWidth <= 768 ? 'text-center text-[55px]' : 'text-4xl text-center justify-center items-center mt-10 '}`}>Welcome to my Portfolio</h1>
       <div className='text-7xl mt-8 font-bold relative h-[350px]'>
         {/* First Section */}
-        <div className='flex p-6 absolute top-0 left-0 w-full '>
+        <div className='flex p-6 absolute top-0 left-0 w-full'>
           <h2 ref={nothingRef} style={{ opacity: 0, transform: 'translateY(-50px)' }} className={`${window.innerWidth <= 768 ? 'text-center text-[55px]' : ''}`}>
             The Best I can be <span className='text-green-500'>WITHOUT JESUS</span> is{' '}
             <span className='text-green-500'>NOTHING!</span>
@@ -213,7 +213,7 @@ const Home = () => {
         {/* Second Section */}
         <div className='flex p-6 absolute top-0 left-0 w-full'>
           <h2 ref={excellentRef} style={{ opacity: 0, transform: 'translateY(-50px)' }} className={`${window.innerWidth <= 768 ? 'text-center text-[55px]' : ''}`}>
-            The least I can be <span className='text-green-500 '><br />WITH JESUS</span> is{' '}
+            The least I can be <span className='text-green-500 '>WITH JESUS</span> is{' '}
             <span className='text-green-500'>EXCELLENT!</span>
           </h2>
           <img

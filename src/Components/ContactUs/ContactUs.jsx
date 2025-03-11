@@ -95,7 +95,7 @@ const ContactUs = () => {
             
             <div className="w-1/2">
                 <h3 className="text-xl font-semibold mb-4">Send a Message</h3>
-                <form onSubmit={handleSubmit} className={`${window.innerWidth < 768 ? 'space-y-4 w-100 flex flex-col justify-center items-center':'space-y-4 w-100'}`}>
+                <form onSubmit={handleSubmit} className={`${window.innerWidth < 768 ? 'w-100 flex flex-col justify-center items-center':'space-y-4 w-100'}`}>
                     <div>
                         <label htmlFor="to_name" className="block text-sm font-medium text-green-500">Name</label>
                         <input

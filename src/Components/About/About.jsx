@@ -3,10 +3,10 @@ import aboutPic from '../../assets/about.png';
 
 const About = () => {
     return (
-        <div className="p-8">
-            <div className="flex flex-col md:flex-row mt-4 gap-8">            
+        <div className="p-5">
+            <div className={`${window.innerWidth < 768 ? 'flex flex-col md:flex-row  gap-8':'flex flex-col md:flex-row mt-4 gap-8'}`}>            
                 {/* Image Section (50%) */}
-                <div className="w-full md:w-1/2 flex justify-center items-center mt-12">
+                <div className={`${window.innerWidth < 768 ? 'w-full flex justify-center items-center ': 'w-full flex justify-center items-center mt-12'}`}>
                     <div className='relative flex justify-center items-center w-full'>
                         <img
                             src={aboutPic}
