@@ -52,8 +52,8 @@ const ContactUs = () => {
     ];
 
     return (
-        <div className={`${window.innerWidth <= 768 ? 'p-16 w-full':'p-8'}`}>
-          <h2 className="text-2xl font-bold  mb-4">Contact Me</h2>
+        <div className={`${window.innerWidth <= 768 ? 'p-10 w-full':'p-8'}`}>
+          <h2 className={`${window.innerWidth <= 768 ? 'flex justify-center items-center text-2xl font-bold  mb-4': ' text-2xl font-bold  mb-4' }`}>Contact Me</h2>
           <div className='w-full  gap-6'>
             <div className="w-full">
                 <div className={`${window.innerWidth <= 768 ? 'flex flex-col gap-8 justify-center items-center ' : 'mb-6 flex gap-8 justify-center items-center  text-[20px]'}`}>
@@ -81,7 +81,7 @@ const ContactUs = () => {
                     </div>
                 </div>
             </div>
-            <h2 className="text-2xl font-bold  mb-4">You can conncet via-</h2>
+            <h2 className={`${window.innerWidth <= 768 ? 'flex justify-center items-center text-2xl font-bold  mb-4' :'text-2xl font-bold  mb-4'}`}>You can conncet via-</h2>
                  <div className={`${window.innerWidth <= 768 ? 'flex flex-col gap-8' : 'flex w-[80%] gap-16 justify-center item-center mx-auto min-h-screen'}`}>  
                     <div className= {`${window.innerWidth <= 768 ? 'flex justify-center items-center': ''}`}>
                     <div className={`${window.innerWidth <= 768 ? 'flex space-x-4 mb-2  bg-gray-900 h-14 p-2 w-73 rounded-2xl':'flex  space-x-4 mb-2 bg-gray-900 h-14 p-2 w-73 rounded-2xl'}`} >
@@ -93,9 +93,11 @@ const ContactUs = () => {
                     </div>
                 </div>
             
-            <div className="w-1/2">
-                <h3 className="text-xl font-semibold mb-4">Send a Message</h3>
-                <form onSubmit={handleSubmit} className={`${window.innerWidth < 768 ? 'w-100 flex flex-col justify-center items-center':'space-y-4 w-100'}`}>
+            <div className={`${window.innerWidth <= 768 ? 'w-full': 'w-1/2'}`}>
+                <div  className={`${window.innerWidth <= 768 ? 'flex justify-center items-center text-xl font-semibold mb-4': ' text-xl font-semibold mb-4'}`}>
+                    <h3>Send a Message</h3>
+               </div> 
+               <form onSubmit={handleSubmit} className={`${window.innerWidth < 768 ? 'w-100 flex flex-col justify-center items-center':'space-y-4 w-100'}`}>
                     <div>
                         <label htmlFor="to_name" className="block text-sm font-medium text-green-500">Name</label>
                         <input
