@@ -192,7 +192,7 @@ const Home = () => {
 
   return (
     <div className='mt-0 m-auto  border-l border-r border-gray-800'>
-      <h1 className={`${window.innerWidth <= 768 ? 'text-center text-[55px]' : 'text-4xl text-center justify-center items-center mt-10 '}`}>Welcome to my Portfolio</h1>
+      <h1 className={`${window.innerWidth <= 768 ? 'text-center text-[50px] mt-15' : 'text-4xl text-center justify-center items-center mt-10 '}`}>Welcome to my Portfolio</h1>
       <div className='text-7xl mt-8 font-bold relative h-[350px]'>
         {/* First Section */}
         <div className='flex p-6 absolute top-0 left-0 w-full'>
@@ -212,7 +212,7 @@ const Home = () => {
 
         {/* Second Section */}
         <div className='flex p-6 absolute top-0 left-0 w-full'>
-          <h2 ref={excellentRef} style={{ opacity: 0, transform: 'translateY(-50px)' }} className={`${window.innerWidth <= 768 ? 'text-center text-[50px]' : ''}`}>
+          <h2 ref={excellentRef} style={{ opacity: 0, transform: 'translateY(-50px)' }} className={`${window.innerWidth <= 768 ? 'text-center text-[47px]' : ''}`}>
             The least I can be <span className='text-green-500 '>WITH JESUS</span> is{' '}
             <span className='text-green-500'>EXCELLENT!</span>
           </h2>
@@ -230,7 +230,7 @@ const Home = () => {
             <div className={`flex justify-center items-center text-center text-[16px] font-bold bg-green-600 shadow-2xl mb-[2em] px-2 md:px-4 border-green-100 relative z-10
                 ${window.innerWidth <= 768 
                   ? 'w-[350px] h-17 border-r-8 border-l-8 rounded-bl-[2rem] rounded-br-[2rem]'
-                  : 'text-xl w-[20em] md:w-[22em] border-l-8 rounded-tr-[2rem] rounded-br-[2rem] md:mt-[40px] mx-7'
+                  : 'text-[47px] w-[20em] md:w-[22em] border-l-8 rounded-tr-[2rem] rounded-br-[2rem] md:mt-[40px] mx-7'
                 }`
               }
             >

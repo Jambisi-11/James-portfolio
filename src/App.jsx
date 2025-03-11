@@ -28,7 +28,7 @@ const App = () => {
       </div>
 
       {/* Content Wrapper (Push down content to avoid overlapping) */}
-      <div className="pt-[120px] w-[80vw] ">
+      <div className={`${window.innerWidth < 768 ? 'pt-[40px]':'pt-[120px] w-[80vw]'}`} >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
