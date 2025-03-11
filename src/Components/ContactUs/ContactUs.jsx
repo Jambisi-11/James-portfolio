@@ -56,25 +56,26 @@ const ContactUs = () => {
           <h2 className="text-2xl font-bold  mb-4">Contact Me</h2>
           <div className='w-full  gap-6'>
             <div className="w-full">
-                <div className={`${window.innerWidth <= 768 ? 'flex flex-col gap-8' : 'mb-6 flex gap-8 justify-center items-center  text-[20px]'}`}>
-                    <div className='flex flex-col w-[350px] h-[200px] p-4 justify-center items-center text-center sm:flex-row rounded-2xl border border-gray-700 hover:scale-105 hover:font-bold hover:shadow-amber-50 transition-transform duration-300'>
+                <div className={`${window.innerWidth <= 768 ? 'flex flex-col gap-8 justify-center items-center ' : 'mb-6 flex gap-8 justify-center items-center  text-[20px]'}`}>
+                    <div className={`${window.innerWidth <= 768 ? 'flex flex-col w-[300px] h-[200px] p-4 justify-center items-center text-center rounded-2xl border border-gray-700 hover:scale-105 hover:font-bold hover:shadow-amber-50 transition-transform duration-300' : 'flex flex-col w-[350px] h-[200px] p-4 justify-center items-center text-center rounded-2xl border border-gray-700 hover:scale-105 hover:font-bold hover:shadow-amber-50 transition-transform duration-300'}`}>
+                    
                         <div><img src={Location} className='w-10' alt="" /></div>
                         <div>
                             <p> <span className='text-green-500'>Home Address: <br /> </span>Back Winika Hotel, GRA, Gboko, Benue State, Nigeria.</p> <br />
                         </div>
                     </div>
                    
-                    <div className='flex flex-col w-[350px] h-[200px] p-4 justify-center items-center text-center rounded-2xl border border-gray-700 hover:scale-105 hover:font-bold hover:shadow-amber-50 transition-transform duration-300'>
+                    <div className={`${window.innerWidth <= 768 ? 'flex flex-col w-[300px] h-[200px] p-4 justify-center items-center text-center rounded-2xl border border-gray-700 hover:scale-105 hover:font-bold hover:shadow-amber-50 transition-transform duration-300' : 'flex flex-col w-[350px] h-[200px] p-4 justify-center items-center text-center rounded-2xl border border-gray-700 hover:scale-105 hover:font-bold hover:shadow-amber-50 transition-transform duration-300'}`}>
                         <div><img src={Location} className='w-10' alt="" /></div>
                         <p><span className='text-green-500'>Office Address:<br /></span> Peace House Camp, </p> <br />
                     </div>
                     
-                    <div className='flex flex-col w-[350px] h-[200px] p-4 justify-center items-center text-center rounded-2xl border border-gray-700 hover:scale-105 hover:font-bold hover:shadow-amber-50 transition-transform duration-300'>
+                    <div className={`${window.innerWidth <= 768 ? 'flex flex-col w-[300px] h-[200px] p-4 justify-center items-center text-center rounded-2xl border border-gray-700 hover:scale-105 hover:font-bold hover:shadow-amber-50 transition-transform duration-300' : 'flex flex-col w-[350px] h-[200px] p-4 justify-center items-center text-center rounded-2xl border border-gray-700 hover:scale-105 hover:font-bold hover:shadow-amber-50 transition-transform duration-300'}`}>
                         <div><img src={Phone} className='w-10' alt="" /></div>
                         <p><span className='text-green-500'>Phone:<br /></span> +2347032398646 / +2348026898601</p>
                     </div>
 
-                    <div className='flex  flex-col w-[350px]  h-[200px] p-4 justify-center items-center text-center rounded-2xl border border-gray-700 hover:scale-105 hover:font-bold hover:shadow-amber-50 transition-transform duration-300'>
+                    <div className={`${window.innerWidth <= 768 ? 'flex flex-col w-[300px] h-[200px] p-4 justify-center items-center text-center rounded-2xl border border-gray-700 hover:scale-105 hover:font-bold hover:shadow-amber-50 transition-transform duration-300' : 'flex flex-col w-[350px] h-[200px] p-4 justify-center items-center text-center rounded-2xl border border-gray-700 hover:scale-105 hover:font-bold hover:shadow-amber-50 transition-transform duration-300'}`}>
                     <div><img src={Email} className='w-15' alt="" /></div>
                         <p className='hover:text-green-500'><span className='text-green-500'>Email: </span><a href="mailto:jambis.banji@yahoo.com">jambis.banji@yahoo.com</a> or <br /><a href="mailto:jamesjoanna1117@gmail.com">jamesjoanna1117@gmail.com</a></p>
                     </div>
@@ -82,19 +83,19 @@ const ContactUs = () => {
             </div>
             <h2 className="text-2xl font-bold  mb-4">You can conncet via-</h2>
                  <div className={`${window.innerWidth <= 768 ? 'flex flex-col gap-8' : 'flex w-[80%] gap-16 justify-center item-center mx-auto min-h-screen'}`}>  
-                 
-                    <div className="flex  space-x-4 mb-2 bg-gray-900 h-14 p-2 w-73 rounded-2xl">
+                    <div className= {`${window.innerWidth <= 768 ? 'flex justify-center items-center': ''}`}>
+                    <div className={`${window.innerWidth <= 768 ? 'flex space-x-4 mb-2  bg-gray-900 h-14 p-2 w-73 rounded-2xl':'flex  space-x-4 mb-2 bg-gray-900 h-14 p-2 w-73 rounded-2xl'}`} >
                         {socialIcons.map(({ id, Icon, link }) => (
                             <a key={id} href={link} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-green-500">
                                 <Icon className="w-8 h-8" />
                             </a>
                         ))}
                     </div>
-                
+                </div>
             
             <div className="w-1/2">
                 <h3 className="text-xl font-semibold mb-4">Send a Message</h3>
-                <form onSubmit={handleSubmit} className="space-y-4 w-100">
+                <form onSubmit={handleSubmit} className={`${window.innerWidth < 768 ? 'space-y-4 w-100 flex flex-col justify-center items-center':'space-y-4 w-100'}`}>
                     <div>
                         <label htmlFor="to_name" className="block text-sm font-medium text-green-500">Name</label>
                         <input
@@ -103,7 +104,8 @@ const ContactUs = () => {
                             name="to_name"
                             value={formData.to_name}
                             onChange={handleChange}
-                            className="mt-1 block hover:text-black hover:bg-green-600 w-full p-2  hover:border-black border border-gray-300 rounded-md"
+                            className={`${window.innerWidth <= 768 ? 'mt-1 block hover:text-black hover:bg-green-600 w-[300px] p-2  hover:border-black border border-gray-300 rounded-md':'mt-1 block hover:text-black hover:bg-green-600 w-full p-2  hover:border-black border border-gray-300 rounded-md'}`}
+                        
                             required
                         />
                     </div>
@@ -115,8 +117,9 @@ const ContactUs = () => {
                             name="from_name"
                             value={formData.from_name}
                             onChange={handleChange}
-                            className="mt-1 block w-full p-2 border hover:text-black hover:bg-green-600 hover:border-black border-gray-300 rounded-md"
-                            required
+                            className={`${window.innerWidth <= 768 ? 'mt-1 block hover:text-black hover:bg-green-600 w-[300px] p-2  hover:border-black border border-gray-300 rounded-md':'mt-1 block hover:text-black hover:bg-green-600 w-full p-2  hover:border-black border border-gray-300 rounded-md'}`}
+                        
+                        required
                         />
                     </div>
                     <div>
@@ -126,7 +129,7 @@ const ContactUs = () => {
                             name="message"
                             value={formData.message}
                             onChange={handleChange}
-                            className="mt-1 block w-full p-2 border border-gray-300 rounded-md hover:text-black hover:bg-green-600"
+                            className={`${window.innerWidth <= 768 ? 'mt-1 block hover:text-black hover:bg-green-600 w-[300px] p-2  hover:border-black border border-gray-300 rounded-md':'mt-1 block hover:text-black hover:bg-green-600 w-full p-2  hover:border-black border border-gray-300 rounded-md'}`}
                             rows="4"
                             required
                         ></textarea>

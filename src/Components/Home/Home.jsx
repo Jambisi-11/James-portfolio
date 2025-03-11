@@ -229,7 +229,7 @@ const Home = () => {
       <div className="flex justify-center items-center">
             <div className={`flex justify-center items-center text-center text-[16px] font-bold bg-green-600 shadow-2xl mb-[2em] px-2 md:px-4 border-green-100 relative z-10
                 ${window.innerWidth <= 768 
-                  ? 'w-[350px] h-14 border-r-8 border-l-8 rounded-bl-[2rem] rounded-br-[2rem]'
+                  ? 'w-[350px] h-17 border-r-8 border-l-8 rounded-bl-[2rem] rounded-br-[2rem]'
                   : 'text-xl w-[20em] md:w-[22em] border-l-8 rounded-tr-[2rem] rounded-br-[2rem] md:mt-[40px] mx-7'
                 }`
               }
