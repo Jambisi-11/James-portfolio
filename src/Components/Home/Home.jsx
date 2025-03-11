@@ -226,18 +226,26 @@ const Home = () => {
         </div>
       </div>
       {/* Link Container */}
-      <div className='text-xl md:text-2xl font-bold w-[20em] md:w-[22em] bg-green-600 shadow-2xl mb-[2em] mx-7 px-2 md:px-4 border-l-8 border-green-100 rounded-tr-[2rem] rounded-br-[2rem] relative z-10 md:mt-[40px]'>
-        <p>
-          It is undiluted Truth that Jesus died for you
-          Give your life to Him
-          <Link
-            to='/blog'
-            className='pl-8 italic text-black hover:text-red-700 inline-block '
-          >
-            Click me
-          </Link>
-        </p>
-      </div>
+      <div className="flex justify-center items-center">
+            <div className={`flex justify-center items-center text-center text-[16px] font-bold bg-green-600 shadow-2xl mb-[2em] px-2 md:px-4 border-green-100 relative z-10
+                ${window.innerWidth <= 768 
+                  ? 'w-[350px] h-14 border-r-8 border-l-8 rounded-bl-[2rem] rounded-br-[2rem]'
+                  : 'text-xl w-[20em] md:w-[22em] border-l-8 rounded-tr-[2rem] rounded-br-[2rem] md:mt-[40px] mx-7'
+                }`
+              }
+            >
+              <p>
+                It is undiluted Truth that Jesus died for you. Give your life to Him.{' '}
+                <Link
+                  to='/blog'
+                  className='pl-8 italic text-black hover:text-red-700 inline-block'
+                >
+                  Click me
+                </Link>
+              </p>
+            </div>
+          </div>
+
     </div>
   );
 };
