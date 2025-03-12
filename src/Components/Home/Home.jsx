@@ -196,7 +196,7 @@ const Home = () => {
       <div className='text-7xl mt-8 font-bold relative h-[350px]'>
         {/* First Section */}
         <div className='flex p-6 absolute top-0 left-0 w-full'>
-          <h2 ref={nothingRef} style={{ opacity: 0, transform: 'translateY(-50px)' }} className={`${window.innerWidth <= 768 ? 'text-center text-[50px]' : ''}`}>
+          <h2 ref={nothingRef} style={{ opacity: 0, transform: 'translateY(-50px)' }} className={`${window.innerWidth <= 768 ? 'text-center text-[50px]' : 'text-[90px]'}`}>
             The Best I can be <span className='text-green-500'>WITHOUT JESUS</span> is{' '}
             <span className='text-green-500'>NOTHING!</span>
           </h2>
@@ -212,7 +212,7 @@ const Home = () => {
 
         {/* Second Section */}
         <div className='flex p-6 absolute top-0 left-0 w-full'>
-          <h2 ref={excellentRef} style={{ opacity: 0, transform: 'translateY(-50px)' }} className={`${window.innerWidth <= 768 ? 'text-center text-[47px]' : ''}`}>
+          <h2 ref={excellentRef} style={{ opacity: 0, transform: 'translateY(-50px)' }} className={`${window.innerWidth <= 768 ? 'text-center text-[47px]' : 'text-[90px]'}`}>
             The least I can be <span className='text-green-500 '>WITH JESUS</span> is{' '}
             <span className='text-green-500'>EXCELLENT!</span>
           </h2>
@@ -226,11 +226,10 @@ const Home = () => {
         </div>
       </div>
       {/* Link Container */}
-      <div className="w-10em">
-            <div className={`flex text-[12px] font-bold bg-green-600 shadow-2xl  mb-[2em] px-2 md:px-4 border-green-100 relative z-10
-                ${window.innerWidth <= 768 
-                  ? 'w-[350px] h-17 border-r-8 border-l-8 rounded-bl-[2rem] rounded-br-[2rem]'
-                  : 'text-[30px] w-[20em] md:w-[22em] border-l-8 rounded-tr-[3rem] rounded-br-[3rem] md:mt-[40px] mx-7'
+      <div className={`${window.innerWidth <= 768 ? 'flex justify-center items-center': 'ml-8 flex '}`} >
+            <div className={`${window.innerWidth <= 768 
+                  ? 'flex justify-center items-center text-center w-[350px] h-17 border-r-8 border-l-8 rounded-bl-[2rem] rounded-br-[2rem] font-bold bg-green-600 shadow-2xl mb-[2em] px-2 border-green-100 relative z-10 '
+                  : 'text-[30px] w-[22em]  border-l-8 rounded-tr-[3rem] rounded-br-[3rem] flex items-end text-center font-bold bg-green-600 shadow-2xl mb-[2em] px-2 border-green-100 relative z-10'
                 }`
               }
             >
