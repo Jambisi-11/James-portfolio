@@ -237,7 +237,7 @@ const Home = () => {
                 It is undiluted Truth that Jesus died for you. Give your life to Him.{' '}
                 <Link
                   to='/blog'
-                  className='pl-8 italic text-black hover:text-red-700 inline-block'
+                  className='pl-2 italic text-black hover:text-red-700 inline-block'
                 >
                   Click me
                 </Link>
