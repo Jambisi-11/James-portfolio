@@ -226,11 +226,11 @@ const Home = () => {
         </div>
       </div>
       {/* Link Container */}
-      <div className="w--10em">
+      <div className="w-10em">
             <div className={`flex text-[12px] font-bold bg-green-600 shadow-2xl  mb-[2em] px-2 md:px-4 border-green-100 relative z-10
                 ${window.innerWidth <= 768 
                   ? 'w-[350px] h-17 border-r-8 border-l-8 rounded-bl-[2rem] rounded-br-[2rem]'
-                  : 'text-[47px] w-[20em] md:w-[22em] border-l-8 rounded-tr-[2rem] rounded-br-[2rem] md:mt-[40px] mx-7'
+                  : 'text-[30px] w-[20em] md:w-[22em] border-l-8 rounded-tr-[3rem] rounded-br-[3rem] md:mt-[40px] mx-7'
                 }`
               }
             >
