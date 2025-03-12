@@ -228,7 +228,7 @@ const Home = () => {
       {/* Link Container */}
       <div className={`${window.innerWidth <= 768 ? 'flex justify-center items-center': 'ml-8 flex '}`} >
             <div className={`${window.innerWidth <= 768 
-                  ? 'flex justify-center items-center text-center w-[250px] h-19 border-r-8 border-l-8 rounded-bl-[2rem] rounded-br-[2rem] font-bold bg-green-600 shadow-2xl mb-[2em] px-2 border-green-100 relative z-10 '
+                  ? 'flex justify-center items-center text-center w-[280px] h-19 border-r-8 border-l-8 rounded-[3rem] font-bold bg-green-600 shadow-2xl mb-[2em] px-2 border-green-100 relative z-10 '
                   : 'text-[30px] w-[22em]  border-l-8 rounded-tr-[3rem] rounded-br-[3rem] flex items-end text-center font-bold bg-green-600 shadow-2xl mb-[2em] px-2 border-green-100 relative z-10'
                 }`
               }
