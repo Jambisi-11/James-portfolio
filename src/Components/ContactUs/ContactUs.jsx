@@ -52,7 +52,8 @@ const ContactUs = () => {
     ];
 
     return (
-        <div className={`${window.innerWidth <= 768 ? 'p-10 w-full':'p-8'}`}>
+        
+        <div className={`${window.innerWidth <= 768 ? 'p-14 w-full':'p-8'}`}>
           <h2 className={`${window.innerWidth <= 768 ? 'flex justify-center items-center text-2xl font-bold  mb-4': ' text-2xl font-bold  mb-4' }`}>Contact Me</h2>
           <div className='w-full  gap-6'>
             <div className="w-full">
@@ -143,7 +144,7 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-    </div>
+      </div>
     );
 };
 
