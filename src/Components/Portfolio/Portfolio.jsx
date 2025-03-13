@@ -51,7 +51,7 @@ const Portfolio = () => {
         const eduCont1 = [
           {
             title: "Junior High School,",
-            institution: "Ogiyan Community High School,",
+            institution: "Asewele Community High School,",
             town: "Asewele Korede",
             date: "2001 - 2004",
             description: "Best student in mathematics",
@@ -61,7 +61,7 @@ const Portfolio = () => {
               title: "Primary School,",
               institution: "Baptist Primary School,",
               town: "Isanlu Isin",
-              date: "2005 - 2008",
+              date: "1995-2001",
               description: "Completed high school with a focus on mathematics and science. Also, Senior Prefect",
               // children: <p className="text-sm text-gray-500">Additional details can go here.</p>,
           },
