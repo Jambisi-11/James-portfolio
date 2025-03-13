@@ -74,7 +74,7 @@ const Menu = () => {
   return (
     <nav className="flex justify-center items-center h-20 text-white border-b border-gray-800">
       <div className="w-[75vw] flex items-center justify-between m-auto">
-        <img src={logo} alt="logo" className="w-16 h-16 md:justify-around rounded-[1.5em]" />
+        <img src={logo} alt="logo" className={`${window.innerWidth <= 768 ? 'w-10 h-10 md:justify-around rounded-[1.5em]"':'w-16 h-16 md:justify-around rounded-[1.5em]'}`} />
 
         {/* Navigation Menu */}
         <ul className=" gap-4 ml-auto hidden md:flex ">
